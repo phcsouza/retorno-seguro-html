@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<title>
+    Teste do Chatbot com o RASA
+</title>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <script>!(function () {
+            let e = document.createElement("script"),
+                t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+                "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+                // Replace 1.x.x with the version that you want
+                (e.async = !0),
+                (e.onload = () => {
+                    sessionStorage.clear();
+                    window.WebChat.default(
+                        {
+                            customData: { language: "en" },
+                            socketUrl: "rasa-server-phcsouza.cloud.okteto.net",
+                            // add other props here
+                            initPayload: "/boas_vindas",
+                            title: 'Chatbot Retorno Seguro',
+                            inputTextFieldHint: 'Digite sua mensagem...',
+                            mainColor: '#014341',
+                            conversationBackgroundColor: '#FFFFFF',
+                            userTextColor: '',
+                            userBackgroundColor: '#6E7F6D',
+                            assistTextColor: '',
+                            assistBackgoundColor: '#DCDCDC',
+                            params: {
+                                storage: 'session'
+                            },
+                            // autoClearCache: false,
+                            // displayUnreadCount: false,
+                            // onWidgetEvent: {
+                            //     onChatOpen: () => { },
+                            //     onChatClose: () => { },
+                            //     onChatVisible: () => { },
+                            //     onChatHidden: () => { }
+                            // },
+                        },
+                        null
+                    );
+                }),
+                t.insertBefore(e, t.firstChild);
+        })();
+    </script>
+</body>
+
+</html>
