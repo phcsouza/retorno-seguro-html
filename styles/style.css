@@ -21,7 +21,8 @@ html {
 }
 
 body {
-  width: 900px;
+  width: 100%;
+  display: flex;
   margin: 0 auto;
   background-color: #215A36;
   padding: 0 20px 20px 20px;
@@ -36,6 +37,6 @@ h1 {
 }
 
 img {
-  display: block;
+  display: flex;
   margin: 0 auto;
 }
