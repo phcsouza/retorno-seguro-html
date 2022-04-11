@@ -10,7 +10,7 @@ h1 {
 }
 
 p, li {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1;
   letter-spacing: 1px;
 }
@@ -24,7 +24,7 @@ html {
 
 body {
   width: 75%;
-  height: fit-content;
+  height: 100%;
   display: block;
   margin: 0 auto;
   background-color: #215A36;
