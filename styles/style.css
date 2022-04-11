@@ -21,9 +21,9 @@ html {
 }
 
 body {
-  width:fit-content;
-  height: auto;
-  display: flex;
+  width: 75%;
+  height: fit-content;
+  display: block;
   margin: 0 auto;
   background-color: #215A36;
   padding: 0 20px 20px 20px;
