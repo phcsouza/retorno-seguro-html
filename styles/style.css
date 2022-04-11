@@ -40,6 +40,8 @@ h1 {
 }
 
 img {
+  width: flex;
+  height: fit-content;
   display: flex;
   margin: 0 auto;
 }
