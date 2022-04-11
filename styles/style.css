@@ -17,6 +17,8 @@ p, li {
 
 
 html {
+  width: flex;
+  height: flex;
   background-color: #EEEEEE;
 }
 
