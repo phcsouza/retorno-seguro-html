@@ -1,61 +1,55 @@
 <!DOCTYPE html>
-<html>
-
-<title>
-    Teste do Chatbot com o RASA
-</title>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste do Chatbot com o RASA</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <script>!(function () {
-            let e = document.createElement("script"),
-                t = document.head || document.getElementsByTagName("head")[0];
-            (e.src =
-                "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-                // Replace 1.x.x with the version that you want
-                (e.async = !0),
-                (e.onload = () => {
-                    sessionStorage.clear();
-                    window.WebChat.default(
-                        {
-                            customData: { language: "en" },
-                            socketUrl: "rasa-server-phcsouza.cloud.okteto.net",
-                            // add other props here
-                            initPayload: "/boas_vindas",
-                            title: 'Chatbot Retorno Seguro',
-                            inputTextFieldHint: 'Digite sua mensagem...',
-                            mainColor: '#014341',
-                            conversationBackgroundColor: '#FFFFFF',
-                            userTextColor: '',
-                            userBackgroundColor: '#6E7F6D',
-                            assistTextColor: '',
-                            assistBackgoundColor: '#DCDCDC',
-                            params: {
-                                storage: 'session'
-                            },
-                            // autoClearCache: false,
-                            // displayUnreadCount: false,
-                            // onWidgetEvent: {
-                            //     onChatOpen: () => { },
-                            //     onChatClose: () => { },
-                            //     onChatVisible: () => { },
-                            //     onChatHidden: () => { }
-                            // },
-                        },
-                        null
-                    );
-                }),
-                t.insertBefore(e, t.firstChild);
-        })();
-    </script>
+    <h1>Retorno Seguro UNIFESP</h1>
+    <img src="images/unifesp.png" alt="UNIFESP logo" height="300">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-rectangle" src="images/unifesp.png" alt="UNIFESP logo" height="300">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript code-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="js/rasa.js"></script>
+
+    <div id="rasaWebchatPro">
+        <div class="" style="display: none;"></div>
+    </div>
+    <style>
+        @keyframes default-botfront-blinker-animation {
+            0% {
+                outline-color: rgba(0, 255, 0, 0);
+            }
+
+            49% {
+                outline-color: rgba(0, 255, 0, 0);
+            }
+
+            50% {
+                outline-color: green;
+            }
+
+            100% {
+                outline-color: green;
+            }
+        }
+    </style>
 </body>
 
 </html>
