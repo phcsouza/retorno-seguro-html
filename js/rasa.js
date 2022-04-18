@@ -9,7 +9,7 @@
           sessionStorage.clear();
           window.WebChat.default(
               {
-                  customData: { language: "pt-br" },
+                  customData: { language: "pt" },
                   socketUrl: "rasa-server-phcsouza.cloud.okteto.net",
                   // add other props here
                   initPayload: "/boas_vindas",
